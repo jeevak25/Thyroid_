@@ -176,7 +176,7 @@ def main():
 
         # Create a button to open the other Streamlit file
         if test_button:
-            subprocess.Popen(["streamlit", "run", "test.py"])
+            st.link_button("Test", "https://test-q5grhizwcwfwmq64ypcpd3.streamlit.app/")
             
 
 
