@@ -156,27 +156,9 @@ def main():
                 f"<h1 style='text-align: center; color: {diagnosis_color};'>{diagnosis_label}</h1>",
                 unsafe_allow_html=True)
 
-        test_button = st.button('Test', key='test_button')
-        test_button_container = st.container()
-        with test_button_container:
-                test_button_css = f"""
-                            <style>
-                                .stButton > button:first-child {{
-                                    width: 100%;
-                                    color: white;
-                                    border-color: {detect_button_color};
-                                    border-radius: 5px;
-                                    padding: 10px;
-                                }}
-                            </style>
-                        """
-                st.markdown(test_button_css, unsafe_allow_html=True)
-
-
-
-        # Create a button to open the other Streamlit file
-        if test_button:
-            st.link("Test", "https://test-q5grhizwcwfwmq64ypcpd3.streamlit.app/")
+       
+            st.page_link("thyroid.py", label="Lab Test")
+            st.page_link("test.py", label="Lab Test")
             
 
 
