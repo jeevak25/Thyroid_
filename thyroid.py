@@ -21,7 +21,7 @@ title_css = f"<h1 style='text-align: center; color: {title_color};'>Thyroid Diag
 # Detect button color
 detect_button_color = '#F63366'
 
-st.page_link("thyroid.py", label="Lab Test")
+st.page_link("thyroid.py", label="Home")
 st.page_link("test.py", label="Lab Test")
 
 # Function to preprocess inputs before prediction
