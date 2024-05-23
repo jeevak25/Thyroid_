@@ -21,6 +21,9 @@ title_css = f"<h1 style='text-align: center; color: {title_color};'>Thyroid Diag
 # Detect button color
 detect_button_color = '#F63366'
 
+st.page_link("thyroid.py", label="Lab Test")
+st.page_link("test.py", label="Lab Test")
+
 # Function to preprocess inputs before prediction
 def preprocess_inputs(age, sex, on_thyroxine, query_on_thyroxine, on_antithyroid_meds, sick, pregnant,
                       thyroid_surgery, I131_treatment, query_hypothyroid, query_hyperthyroid, lithium,
@@ -157,8 +160,7 @@ def main():
                 unsafe_allow_html=True)
 
        
-            st.page_link("thyroid.py", label="Lab Test")
-            st.page_link("test.py", label="Lab Test")
+            
             
 
 
